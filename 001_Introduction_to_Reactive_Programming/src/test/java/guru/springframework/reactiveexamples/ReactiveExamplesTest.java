@@ -8,19 +8,16 @@ import reactor.core.publisher.Mono;
 import java.time.Duration;
 import java.util.concurrent.CountDownLatch;
 
-/**
- * Created by jt on 8/24/17.
- */
 @Slf4j
 public class ReactiveExamplesTest {
 
-    Person michael = new Person("Michael", "Weston");
-    Person fiona = new Person("Fiona", "Glenanne");
-    Person sam = new Person("Sam", "Axe");
-    Person jesse = new Person("Jesse", "Porter");
+    private Person michael = new Person("Michael", "Weston");
+    private Person fiona = new Person("Fiona", "Glenanne");
+    private Person sam = new Person("Sam", "Axe");
+    private Person jesse = new Person("Jesse", "Porter");
 
     @Test
-    public void monoTests() throws Exception {
+    public void monoTests() {
         //create new person mono
         Mono<Person> personMono = Mono.just(michael);
 
@@ -32,20 +29,19 @@ public class ReactiveExamplesTest {
     }
 
     @Test
-    public void monoTransform() throws Exception {
+    public void monoTransform() {
         //create new person mono
         Mono<Person> personMono = Mono.just(fiona);
 
+        //type transformation
         PersonCommand command = personMono
-                .map(person -> { //type transformation
-                    return new PersonCommand(person);
-                }).block();
+                .map(PersonCommand::new).block();
 
         log.info(command.sayMyName());
     }
 
     @Test(expected = NullPointerException.class)
-    public void monoFilter() throws Exception {
+    public void monoFilter() {
         Mono<Person> personMono = Mono.just(sam);
 
         //filter example
@@ -58,7 +54,7 @@ public class ReactiveExamplesTest {
     }
 
     @Test
-    public void fluxTest() throws Exception {
+    public void fluxTest() {
 
         Flux<Person> people = Flux.just(michael, fiona, sam, jesse);
 
@@ -67,7 +63,7 @@ public class ReactiveExamplesTest {
     }
 
     @Test
-    public void fluxTestFilter() throws Exception {
+    public void fluxTestFilter() {
 
         Flux<Person> people = Flux.just(michael, fiona, sam, jesse);
 
@@ -77,7 +73,7 @@ public class ReactiveExamplesTest {
     }
 
     @Test
-    public void fluxTestDelayNoOutput() throws Exception {
+    public void fluxTestDelayNoOutput() {
 
         Flux<Person> people = Flux.just(michael, fiona, sam, jesse);
 
