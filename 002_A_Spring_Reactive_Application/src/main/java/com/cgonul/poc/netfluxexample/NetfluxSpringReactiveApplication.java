@@ -1,4 +1,4 @@
-package com.cgonul.poc.netfluxspringreactiveapplication;
+package com.cgonul.poc.netfluxexample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

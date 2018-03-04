@@ -1,4 +1,4 @@
-package com.cgonul.poc.netfluxspringreactiveapplication;
+package com.cgonul.poc.netfluxexample;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class NetfluxSpringReactiveApplicationTests {
+public class NetFluxSpringReactiveApplicationTests {
 
 	@Test
 	public void contextLoads() {
