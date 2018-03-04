@@ -1,21 +1,13 @@
-package guru.springframework.reactiveexamples;
+package com.cgonul.poc.reactiveexamples;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * Created by jt on 8/24/17.
- */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PersonCommand {
-
-    public PersonCommand(Person person) {
-        this.firstName = person.getFirstName();
-        this.lastName = person.getLastName();
-    }
+public class Person {
 
     private String firstName;
     private String lastName;
@@ -23,4 +15,5 @@ public class PersonCommand {
     public String sayMyName(){
         return "My Name is " + firstName + " " + lastName + ".";
     }
+
 }

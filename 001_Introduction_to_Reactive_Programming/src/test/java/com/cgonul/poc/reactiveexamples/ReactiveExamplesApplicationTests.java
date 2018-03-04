@@ -1,4 +1,4 @@
-package guru.springframework.reactiveexamples;
+package com.cgonul.poc.reactiveexamples;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
