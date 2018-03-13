@@ -23,8 +23,9 @@ public class MovieServiceImpl implements MovieService {
 
 	@Override
 	public Flux<MovieEvent> events(String movieId) {
-		return Flux.<MovieEvent>generate(movieEventSynchronousSink -> movieEventSynchronousSink.next(new MovieEvent(movieId, new Date())))
-				.delayElements(Duration.ofMillis(100));
+		return Flux.<MovieEvent>generate(sink -> sink.next(new MovieEvent(movieId, new Date())))
+				.delayElements(Duration.ofMillis(1000))
+				.take(10);
 	}
 
 	@Override
