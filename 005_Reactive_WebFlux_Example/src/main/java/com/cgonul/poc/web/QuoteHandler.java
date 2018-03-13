@@ -1,7 +1,7 @@
-package guru.springframework.webfluxstockquoteservice.web;
+package com.cgonul.poc.web;
 
-import guru.springframework.webfluxstockquoteservice.model.Quote;
-import guru.springframework.webfluxstockquoteservice.service.QuoteGeneratorService;
+import com.cgonul.poc.model.Quote;
+import com.cgonul.poc.service.QuoteGeneratorService;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;

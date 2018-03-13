@@ -1,4 +1,4 @@
-package guru.springframework.webfluxstockquoteservice.web;
+package com.cgonul.poc.web;
 
 
 import org.springframework.context.annotation.Bean;

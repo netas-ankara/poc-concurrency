@@ -1,4 +1,4 @@
-package guru.springframework.webfluxstockquoteservice.model;
+package com.cgonul.poc.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,6 +1,6 @@
-package guru.springframework.webfluxstockquoteservice.service;
+package com.cgonul.poc.service;
 
-import guru.springframework.webfluxstockquoteservice.model.Quote;
+import com.cgonul.poc.model.Quote;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.SynchronousSink;

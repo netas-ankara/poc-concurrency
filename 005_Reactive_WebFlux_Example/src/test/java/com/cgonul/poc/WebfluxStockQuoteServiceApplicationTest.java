@@ -1,6 +1,6 @@
-package guru.springframework.webfluxstockquoteservice;
+package com.cgonul.poc;
 
-import guru.springframework.webfluxstockquoteservice.model.Quote;
+import com.cgonul.poc.model.Quote;
 
 import org.junit.Before;
 import org.junit.Test;
