@@ -1,12 +1,12 @@
-package com.cgonul.poc.reactivemongodbquoteapplication;
+package com.cgonul.poc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ReactiveMongoDbQuoteApplication {
+public class QuoteGeneratorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ReactiveMongoDbQuoteApplication.class, args);
+		SpringApplication.run(QuoteGeneratorApplication.class, args);
 	}
 }

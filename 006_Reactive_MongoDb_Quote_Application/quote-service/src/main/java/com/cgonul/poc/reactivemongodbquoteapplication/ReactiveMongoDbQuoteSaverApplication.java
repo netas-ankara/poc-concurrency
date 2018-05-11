@@ -1,12 +1,12 @@
-package com.cgonul.poc;
+package com.cgonul.poc.reactivemongodbquoteapplication;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebfluxStockQuoteServiceApplication {
+public class ReactiveMongoDbQuoteSaverApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebfluxStockQuoteServiceApplication.class, args);
+		SpringApplication.run(ReactiveMongoDbQuoteSaverApplication.class, args);
 	}
 }

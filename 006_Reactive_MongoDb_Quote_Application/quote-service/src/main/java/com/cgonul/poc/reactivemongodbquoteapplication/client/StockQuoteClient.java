@@ -10,6 +10,7 @@ import com.cgonul.poc.reactivemongodbquoteapplication.domain.Quote;
 
 import lombok.Setter;
 
+import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 
