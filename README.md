@@ -1,2 +1,2 @@
 # poc-concurrency
-Poc for various concurrency technologies and for teoric background.
+Poc for various concurrency technologies and for theoretical background.
